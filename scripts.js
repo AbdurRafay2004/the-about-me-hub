@@ -3,9 +3,20 @@ document.addEventListener("DOMContentLoaded", function() {
   // Hamburger menu logic
   const hamburger = document.getElementById("hamburger");
   const navLinks = document.getElementById("nav-links");
+  const navLinksItems = document.querySelectorAll("#nav-links a");
+  
   if (hamburger && navLinks) {
     hamburger.addEventListener("click", () => {
       navLinks.classList.toggle("collapsed");
+    });
+    
+    // Close menu when clicking on links (for mobile)
+    navLinksItems.forEach(link => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth < 720) {
+          navLinks.classList.add("collapsed");
+        }
+      });
     });
   }
 
