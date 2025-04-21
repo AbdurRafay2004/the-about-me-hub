@@ -1,0 +1,40 @@
+
+/* Dark mode styles and overrides */
+body.dark {
+  --bg: #22202b;
+  --fg: #f7f7f8;
+  --card: #252336;
+  --primary: #9b87f5;
+  --secondary: #39365a;
+  --muted: #aaa;
+  --border: #39365a;
+}
+
+body.dark .section,
+body.dark nav,
+body.dark .gallery-item {
+  background: var(--card);
+  color: var(--fg);
+  border-color: var(--border) !important;
+}
+body.dark .card {
+  background: var(--secondary);
+  color: var(--fg);
+  border-color: var(--border);
+}
+
+body.dark .btn,
+body.dark .portfolio-filters button.active,
+body.dark .portfolio-filters button:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+body.dark .blog-title,
+body.dark .nav-logo {
+  color: var(--primary);
+}
+body.dark .gallery-caption {
+  background: rgba(20,20,32,0.8);
+  color: #fff;
+}
