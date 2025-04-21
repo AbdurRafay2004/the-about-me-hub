@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio – Your Name</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-logo"><a href="index.html">Your Name</a></span>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <div class="nav-links" id="nav-links">
+        <a href="about.html">About</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="experience.html">Experience</a>
+        <a href="current-projects.html">Current Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <button title="Toggle dark mode" class="dark-toggle" id="dark-toggle">&#9788;</button>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="section fade-in">
+      <h1 class="section-title">Portfolio</h1>
+      <div class="portfolio-filters">
+        <button class="active" data-category="all">All</button>
+        <button data-category="tech">Tech</button>
+        <button data-category="creative">Creative</button>
+        <button data-category="hobby">Hobby</button>
+      </div>
+      <div class="card-list">
+        <div class="card" data-category="tech">
+          <strong>Personal Website</strong>
+          <p>Designed and coded this portfolio in HTML/CSS/JS for GitHub Pages.<br>
+          <a href="https://github.com/yourgithub/portfolio" target="_blank">GitHub Repo</a></p>
+        </div>
+        <div class="card" data-category="tech">
+          <strong>Weather App</strong>
+          <p>Weather dashboard using JavaScript and APIs.<br>
+          <a href="https://github.com/yourgithub/weather-app" target="_blank">View on GitHub</a></p>
+        </div>
+        <div class="card" data-category="creative">
+          <strong>Facebook Promo Banner</strong>
+          <p>Designed a vibrant promotional banner for a local artist's Facebook page.<br>
+          <em>See sample below.</em></p>
+        </div>
+        <div class="card" data-category="creative">
+          <strong>Video Editing — YouTube Montage</strong>
+          <p>Created and edited a YouTube highlight montage using Adobe Premiere Pro.<br>
+          <a href="https://youtube.com/@yourchannel" target="_blank">See on YouTube</a>
+          </p>
+        </div>
+        <div class="card" data-category="hobby">
+          <strong>Manga Translation Blog</strong>
+          <p>Wrote articles and translated manga chapters as a hobby blog project.</p>
+        </div>
+        <div class="card" data-category="hobby">
+          <strong>Experimental JS Games</strong>
+          <p>Built small browser games as coding experiments: Tetris, Snake, Wordle clones.<br>
+          <a href="https://github.com/yourgithub/js-games" target="_blank">See Projects</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2024 Your Name &mdash; Portfolio
+  </footer>
+</body>
+</html>
